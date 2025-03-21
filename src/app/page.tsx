@@ -1,3 +1,4 @@
+// src/app/page.tsx
 "use client"
 
 import { useState } from "react"
@@ -13,7 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Progress } from "@/components/ui/progress"
-import { Separator } from "@/components/ui/seperator"
+import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
@@ -82,21 +83,31 @@ export default function DustAggregator() {
     }
   }
 
+  const handleConnectMainWallet = () => {
+    // Add your wallet connection logic here
+    console.log("Connecting main wallet");
+    alert("Wallet connection feature would be implemented here");
+  }
+
   return (
-    <div className="flex min-h-screen flex-col bg-black text-white">
-      <header className="border-b border-gray-800 px-6 py-4">
+    <div className="min-h-screen w-full flex flex-col bg-black text-white overflow-x-hidden">
+      <header className="sticky top-0 z-10 border-b border-gray-800 px-6 py-4 bg-black">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
           <h1 className="text-xl font-bold">Dust Aggregator</h1>
-          <Button variant="outline" className="gap-2 border-gray-700 bg-transparent text-white hover:bg-gray-800">
+          <Button 
+            variant="outline" 
+            className="gap-2 border-gray-700 bg-transparent text-white hover:bg-gray-800"
+            onClick={handleConnectMainWallet}
+          >
             <Wallet className="h-4 w-4" />
             Connect Wallet
           </Button>
         </div>
       </header>
       
-      <main className="flex-1 px-6 py-8">
+      <main className="flex-1 px-4 sm:px-6 py-8 w-full overflow-x-hidden">
         <div className="mx-auto max-w-5xl">
-          <Card className="border-gray-800 bg-gray-900">
+          <Card className="border-gray-800 bg-gray-900 w-full">
             <CardHeader>
               <CardTitle className="text-2xl">Cross-Chain Dust Aggregator</CardTitle>
               <CardDescription className="text-gray-400">
@@ -188,7 +199,7 @@ export default function DustAggregator() {
                     </ScrollArea>
                     
                     <div className="rounded-lg border border-gray-800 bg-gray-950 p-4">
-                      <div className="flex items-center justify-between">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                         <div>
                           <p className="text-sm text-gray-400">Total Selected Dust Value</p>
                           <p className="text-2xl font-bold">${totalValue}</p>

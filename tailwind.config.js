@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors'); // Import Tailwind's default colors
-
 module.exports = {
   darkMode: ["class"],
   content: [
     './src/pages/**/*.{ts,tsx}',
     './src/components/**/*.{ts,tsx}',
     './src/app/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}', // Add this line to include root-level components
+    './lib/**/*.{ts,tsx}', // Add this line to include root-level lib
   ],
   theme: {
     container: {
@@ -18,8 +18,22 @@ module.exports = {
     },
     extend: {
       colors: {
-        ...colors, // Include default Tailwind colors
-        "gray-850": "#1a1d21",
+        // Define gray explicitly to ensure it's available
+        gray: {
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          300: '#d1d5db',
+          400: '#9ca3af',
+          500: '#6b7280',
+          600: '#4b5563',
+          700: '#374151',
+          800: '#1f2937',
+          850: '#1a1d21',
+          900: '#111827',
+          950: '#030712',
+        },
+        border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -52,9 +66,6 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-      },
-      borderColor: {
-        border: "#e5e7eb", // Define border color here
       },
       borderRadius: {
         lg: "var(--radius)",
