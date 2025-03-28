@@ -18,8 +18,7 @@ This platform enables users to:
 
 this is a one page application (SPA) to make it best for user experience
 
-### **Step 1: Connect Wallets**  
-this is a on page for easy user experience 
+### **Step 1: Connect Wallets** 
 Users begin by connecting their blockchain wallets. **Supported wallets include:**  
 - **Ethereum & Polygon:** MetaMask, Coinbase Wallet  
 - **Starknet:** Argent, Braavos  
