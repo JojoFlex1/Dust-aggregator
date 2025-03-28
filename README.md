@@ -16,6 +16,8 @@ This platform enables users to:
 
 ## 🚀 How It Works  
 
+this is a one page application (SPA) to make it best for user experience
+
 ### **Step 1: Connect Wallets**  
 this is a on page for easy user experience 
 Users begin by connecting their blockchain wallets. **Supported wallets include:**  
