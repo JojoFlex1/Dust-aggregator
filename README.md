@@ -80,7 +80,9 @@ smart contract deployed on stellar , functions are called using stellar SDK .
 🌱 **Support Ecosystem Growth** – Users can donate dust to blockchain projects or charities.  
 
 ---
+
 stellar deployed smart contract link :https://stellar.expert/explorer/testnet/account/GA4RA7IGJ4HGTZPCDYVU4WWWCMWEK5THGDPWAONHKIWVNCHTNP3N6QW7
+
 
 ## 📖 **Setup & Installation**  
 
@@ -130,6 +132,11 @@ git push origin feature-new-update
 ```
 
 ---
+
+CONTACT 
+Telegram : @L_jojo
+Twitter :https://x.com/lady_jojo12
+
 
 ## 📜 **License**  
 
