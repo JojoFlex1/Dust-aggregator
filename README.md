@@ -59,7 +59,7 @@ When a wallet is connected, the platform reads the **token balances** and detect
 | **Wallet Integrations** | MetaMask, Phantom, Braavos, Freighter |
 | **API & RPC Providers** | Alchemy, Infura, QuickNode |
 | **Database (if needed)** | Supabase, PostgreSQL (for tracking transactions) |
-
+smart contract deployed on stellar , functions are called using stellar SDK .
 ---
 
 ## 🏆 **Key Features**  
@@ -80,6 +80,7 @@ When a wallet is connected, the platform reads the **token balances** and detect
 🌱 **Support Ecosystem Growth** – Users can donate dust to blockchain projects or charities.  
 
 ---
+stellar deployed smart contract link :https://stellar.expert/explorer/testnet/account/GA4RA7IGJ4HGTZPCDYVU4WWWCMWEK5THGDPWAONHKIWVNCHTNP3N6QW7
 
 ## 📖 **Setup & Installation**  
 
