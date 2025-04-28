@@ -135,10 +135,6 @@ git push origin feature-new-update
 
 ---
 
-CONTACT 
-Telegram : @L_jojo
-Twitter :https://x.com/lady_jojo12
-
 
 ## 📜 **License**  
 
